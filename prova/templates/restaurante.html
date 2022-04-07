@@ -12,7 +12,20 @@
             <h1>
             {{restaurante.get_nome}}
             </h1>
-        </div>
+            <img src="{{ restaurante.get_foto }}">
+            <p>Horário de Funcionamento {{ restaurante.get_hora_funcionamento }}</p>
+            <p>Endereço: {{ restaurante.get_endereco }}</p>
+
+
+            <p>Comentários dos nossos clientes:</p>
+                {% for comentario in restaurante.get_comentarios %}
+                    <div>
+                    <hr>
+                    <p>Cliente: {{ comentario.get_nome }}</p>
+                    <p>Comentário: {{ comentario.get_comentario }}</p>
+                {% endfor %}
+
+                 </div>
     </div>
 </body>
 </html>
