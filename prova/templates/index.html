@@ -13,8 +13,7 @@
             <h1>
             <a href=" {% url 'restaurante' restaurante.get_id %} ">{{restaurante.get_nome}}</a>
             </h1>
-            <p>
-            </p>
+            <img src="{{restaurante.get_foto}}">
         </div>
     </div>
         {%endfor%}
