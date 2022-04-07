@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 from prova.entity import Restaurante,Especialista
 
@@ -11,7 +10,6 @@ restaurante1= Restaurante(1,"Varandas","Rua Jesus é o poder,Número 30, Centro,
 
 restaurante2 = Restaurante(2,"Sabor do Vale","Rua das Oliveiras,Número 40,Centro,Vassouras","https://media-cdn.tripadvisor.com/media/photo-s/12/99/81/69/fachada.jpg",
                            "12:00 - 20:00",[especialista2])
-
 
 restaurantes = [restaurante1,restaurante2]
 

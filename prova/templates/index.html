@@ -8,13 +8,14 @@
     <title>Home</title>
 </head>
 <body>
+    <h1>Restaurantes em Vassouras</h1>
         {% for restaurante in restaurantes %}
     <div>
-            <h1>
+        <h1>
             <a href=" {% url 'restaurante' restaurante.get_id %} ">{{restaurante.get_nome}}</a>
-            </h1>
-            <img src="{{restaurante.get_foto}}">
-        </div>
+        </h1>
+        <img src="{{restaurante.get_foto}}">
+        <hr>
     </div>
         {%endfor%}
 </body>
