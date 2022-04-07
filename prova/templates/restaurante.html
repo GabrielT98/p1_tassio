@@ -8,15 +8,11 @@
     <title>Home</title>
 </head>
 <body>
-        {% for restaurante in restaurantes %}
     <div>
             <h1>
-            <a href=" {% url 'restaurante' restaurante.get_id %} ">{{restaurante.get_nome}}</a>
+            {{restaurante.get_nome}}
             </h1>
-            <p>
-            </p>
         </div>
     </div>
-        {%endfor%}
 </body>
 </html>
