@@ -1,6 +1,4 @@
 from typing import List
-
-
 class Restaurante():
     def __init__(self,id :int,nome:str,endereco:str,foto:str,hora_funcionamento:str,comentarios:List):
         self._id = id
@@ -9,7 +7,6 @@ class Restaurante():
         self._foto = foto
         self._hora_funcionament0 = hora_funcionamento
         self._comentarios = comentarios
-
 
     def get_id(self):
         return self._id
